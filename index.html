@@ -18,6 +18,22 @@
       padding: 40px;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .header-left {
+      max-width: 70%;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #2563eb;
+    }
     h1 {
       margin: 0;
       font-size: 28px;
@@ -30,32 +46,18 @@
       padding-bottom: 4px;
       margin-top: 30px;
     }
-    p {
+    p, li {
       font-size: 14px;
       color: #374151;
       line-height: 1.6;
     }
-    .header {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    .contact a {
-      text-decoration: none;
-      color: #2563eb;
-      font-size: 14px;
-    }
-    .contact a:hover {
-      text-decoration: underline;
-    }
     ul {
       padding-left: 18px;
-      margin: 8px 0;
     }
-    li {
+    .contact a {
+      color: #2563eb;
+      text-decoration: none;
       font-size: 14px;
-      color: #374151;
-      margin-bottom: 6px;
     }
     .skills span {
       display: inline-block;
@@ -70,88 +72,107 @@
       margin-top: 30px;
       font-size: 13px;
       color: #6b7280;
+      text-align: center;
     }
   </style>
 </head>
+
 <body>
+<div class="resume">
 
-  <div class="resume">
-
-    <!-- Header -->
-    <div class="header">
-      <div>
-        <h1>Jayant Jain</h1>
-        <p><strong>Software Engineer (Fresher) | DSA | Learning AI</strong></p>
-        <p>Mandsaur, Madhya Pradesh, India</p>
-      </div>
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <h1>Jayant Jain</h1>
+      <p><strong>Software Engineer (Fresher) | DSA | Python & Data Analysis</strong></p>
+      <p>Mandsaur, Madhya Pradesh, India</p>
       <div class="contact">
         <p>Email: <a href="mailto:jayantjain0520052@gmail.com">jayantjain0520052@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/jayantjain052005/" target="_blank">linkedin.com/in/jayantjain052005</a></p>
-        <p>GitHub: <a href="https://github.com/jayantjain052005/jayantjain052005" target="_blank">github.com/jayantjain052005</a></p>
+        <p>GitHub: <a href="https://github.com/jayantjain052005" target="_blank">github.com/jayantjain052005</a></p>
         <p>LeetCode: <a href="https://leetcode.com/u/jayantjain052005/" target="_blank">leetcode.com/u/jayantjain052005</a></p>
-        <p>Codolio: <a href="https://codolio.com/profile/jayantjain052005" target="_blank">codolio.com/profile/jayantjain052005</a></p>
       </div>
     </div>
 
-    <!-- Summary -->
-    <h2>Professional Summary</h2>
-    <p>
-      Motivated software engineering fresher with strong foundations in Data Structures & Algorithms,
-      problem-solving, and core computer science concepts. Currently learning Artificial Intelligence
-      and eager to grow into backend, mobile, and full-stack roles. Comfortable with remote work and
-      fast-learning environments.
-    </p>
-
-    <!-- Education -->
-    <h2>Education</h2>
-    <p><strong>Bachelor of Technology (B.Tech)</strong><br>
-       Mandsaur University, Madhya Pradesh<br>
-       Batch: 2027 | CGPA: 8.0 (Current)
-    </p>
-
-    <!-- Skills -->
-    <h2>Technical Skills</h2>
-    <div class="skills">
-      <span>Java</span>
-      <span>Python (Basic)</span>
-      <span>Data Structures & Algorithms</span>
-      <span>OOP</span>
-   
-      <span>MySQL (Basic)</span>
-      <span>AI Fundamentals</span>
-    </div>
-
-    <!-- Projects -->
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>DSA Practice Repository</strong> –
-        <a href="https://github.com/jayantjain052005/jayantjain052005" target="_blank">GitHub Link</a><br>
-        Solved and documented multiple DSA problems focusing on clean, optimized solutions.
-      </li>
-    </ul>
-
-    <!-- Certifications -->
-    <h2>Certifications</h2>
-    <ul>
-      <li>
-        <strong>Sigma 5.0 – Data Structures & Algorithms</strong> –
-        <a href="https://raw.githubusercontent.com/jayantjain052005/dsa/main/certificate-sigma-50-672b17223c33c36b830d9022.pdf" target="_blank">
-          View Certificate
-        </a>
-      </li>
-      <li>
-        <strong>Prime AI Course (Ongoing)</strong> – Apna College
-      </li>
-    </ul>
-
-    <!-- Footer -->
-    <div class="footer">
-      Open to Remote / Relocation • Strong Learning Mindset • Available to Join Immediately
-    </div>
-
+    <img src="profile.jpg" alt="Jayant Jain" class="profile-pic">
   </div>
 
+  <!-- Summary -->
+  <h2>Professional Summary</h2>
+  <p>
+    Motivated software engineering fresher with strong foundations in Data Structures & Algorithms,
+    Python, and data analysis. Hands-on experience in real-world data analysis projects using
+    Pandas, Seaborn, and Matplotlib. Actively learning AI and backend technologies and eager to
+    contribute to impactful engineering teams.
+  </p>
+
+  <!-- Education -->
+  <h2>Education</h2>
+  <p>
+    <strong>Bachelor of Technology (B.Tech)</strong><br>
+    Mandsaur University, Madhya Pradesh<br>
+    Batch: 2027 | CGPA: 8.0 (Current)
+  </p>
+
+  <!-- Skills -->
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span>Java</span>
+    <span>Python</span>
+    <span>Pandas</span>
+    <span>NumPy</span>
+    <span>Seaborn</span>
+    <span>Matplotlib</span>
+    <span>Data Structures & Algorithms</span>
+    <span>OOP</span>
+    <span>MySQL (Basic)</span>
+    <span>Data Analysis</span>
+    <span>AI Fundamentals</span>
+  </div>
+
+  <!-- Projects -->
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      <strong>Restaurant Tips Data Analysis | Python</strong><br>
+      Analyzed customer spending and tipping behavior using the Seaborn Tips dataset.<br>
+      Performed data cleaning, group-by analysis, and pivot tables.<br>
+      Built boxplots, scatter plots, and heatmaps to uncover trends.<br>
+      Identified that weekend dinners generate the highest average tips.<br>
+      Deployed on GitHub and made runnable online using Binder.<br>
+      <strong>GitHub:</strong>
+      <a href="https://github.com/jayantjain052005/restaurant-tips-analysis" target="_blank">
+        restaurant-tips-analysis
+      </a><br>
+      <strong>Live:</strong>
+      <a href="https://mybinder.org/v2/gh/jayantjain052005/restaurant-tips-analysis/HEAD" target="_blank">
+        Run on Binder
+      </a>
+    </li>
+
+    <li style="margin-top:12px;">
+      <strong>DSA Practice Repository</strong> –
+      <a href="https://github.com/jayantjain052005/jayantjain052005" target="_blank">GitHub Link</a><br>
+      Solved and documented multiple DSA problems with optimized and clean solutions.
+    </li>
+  </ul>
+
+  <!-- Certifications -->
+  <h2>Certifications</h2>
+  <ul>
+    <li>
+      <strong>Sigma 5.0 – Data Structures & Algorithms</strong>
+    </li>
+    <li>
+      <strong>Prime AI Course (Ongoing)</strong> – Apna College
+    </li>
+  </ul>
+
+  <div class="footer">
+    Open to Internships & Full-Time Roles • Strong Learning Mindset • Remote / Relocation Ready
+  </div>
+
+</div>
 </body>
 </html>
 
