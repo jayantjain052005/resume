@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<title>Jayant Jain | ML & Software Engineer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jayant Jain | ML & Software Engineer</title>
 
 <style>
 
-body{
-font-family: Arial, Helvetica, sans-serif;
-background:#f4f6f8;
+*{
+box-sizing:border-box;
 margin:0;
 padding:0;
 }
 
-.resume{
+body{
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+background:#f4f6f8;
+line-height:1.6;
+color:#374151;
+}
+
+.container{
 max-width:900px;
 margin:40px auto;
-background:#fff;
+background:white;
 padding:40px;
-box-shadow:0 0 15px rgba(0,0,0,0.1);
+border-radius:10px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
 }
 
 .header{
@@ -27,48 +37,64 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 flex-wrap:wrap;
+margin-bottom:25px;
 }
 
-.header-left{
-max-width:70%;
+.name{
+font-size:30px;
+font-weight:700;
+color:#111827;
+}
+
+.tagline{
+font-size:15px;
+margin-top:4px;
+color:#4b5563;
+}
+
+.location{
+font-size:14px;
+margin-top:6px;
+color:#6b7280;
 }
 
 .profile-pic{
-width:120px;
-height:120px;
+width:110px;
+height:110px;
 border-radius:50%;
 object-fit:cover;
 border:3px solid #2563eb;
 }
 
-h1{
-margin:0;
-font-size:28px;
-color:#1f2937;
-}
-
-h2{
-font-size:18px;
-color:#2563eb;
-border-bottom:2px solid #e5e7eb;
-padding-bottom:4px;
-margin-top:30px;
-}
-
-p,li{
+.contact{
+margin-top:15px;
 font-size:14px;
-color:#374151;
-line-height:1.6;
+}
+
+.contact a{
+color:#2563eb;
+text-decoration:none;
+margin-right:12px;
+}
+
+.section{
+margin-top:28px;
+}
+
+.section h2{
+font-size:18px;
+border-bottom:2px solid #e5e7eb;
+padding-bottom:5px;
+color:#2563eb;
+margin-bottom:10px;
 }
 
 ul{
 padding-left:18px;
 }
 
-.contact a{
-color:#2563eb;
-text-decoration:none;
-font-size:14px;
+li{
+margin-bottom:8px;
 }
 
 .skills span{
@@ -76,91 +102,129 @@ display:inline-block;
 background:#e0e7ff;
 color:#1e3a8a;
 padding:6px 10px;
-margin:4px;
 border-radius:4px;
+margin:4px;
 font-size:13px;
+}
+
+.project{
+margin-bottom:12px;
+}
+
+.tech{
+font-size:13px;
+color:#6b7280;
+margin-top:2px;
 }
 
 .footer{
-margin-top:30px;
+text-align:center;
+margin-top:35px;
 font-size:13px;
 color:#6b7280;
-text-align:center;
+}
+
+@media (max-width:700px){
+
+.header{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.profile-pic{
+margin-top:15px;
+}
+
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="resume">
+<div class="container">
 
 <div class="header">
 
-<div class="header-left">
+<div>
 
-<h1>Jayant Jain</h1>
+<div class="name">Jayant Jain</div>
 
-<p><strong>B.Tech CSE Student | Machine Learning | Data Analysis | Python</strong></p>
+<div class="tagline">
+B.Tech CSE Student | Machine Learning | Data Analysis | Python
+</div>
 
-<p>Mandsaur, Madhya Pradesh, India</p>
+<div class="location">
+Mandsaur, Madhya Pradesh, India
+</div>
 
 <div class="contact">
 
-<p>Email:
-<a href="mailto:jayantjain0520052@gmail.com">
-jayantjain0520052@gmail.com
-</a></p>
+<a href="mailto:jayantjain0520052@gmail.com">Email</a>
 
-<p>Portfolio:
 <a href="https://jayantjain052005.github.io/resume/" target="_blank">
-jayantjain052005.github.io/resume
-</a></p>
+Portfolio
+</a>
 
-<p>LinkedIn:
 <a href="https://www.linkedin.com/in/jayantjain052005/" target="_blank">
-linkedin.com/in/jayantjain052005
-</a></p>
+LinkedIn
+</a>
 
-<p>GitHub:
 <a href="https://github.com/jayantjain052005" target="_blank">
-github.com/jayantjain052005
-</a></p>
+GitHub
+</a>
 
-<p>LeetCode:
 <a href="https://leetcode.com/u/jayantjain052005/" target="_blank">
-leetcode.com/u/jayantjain052005
-</a></p>
+LeetCode
+</a>
 
 </div>
-</div>
-
-<img src="profile.jpg" class="profile-pic">
 
 </div>
+
+<img src="assets/profile.jpg" class="profile-pic">
+
+</div>
+
+
+<div class="section">
 
 <h2>Professional Summary</h2>
 
 <p>
-Motivated B.Tech student with strong foundations in
-<strong>Data Structures & Algorithms, Python, Machine Learning, and Data Analysis.</strong>
-Experienced in building data-driven projects using
-<strong>Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn.</strong>
-Interested in machine learning, computer vision, and real-world AI applications.
-Seeking internship opportunities to apply ML and engineering skills in practical systems.
+Computer Science student with strong foundations in 
+<strong>Data Structures & Algorithms, Machine Learning, and Data Analysis.</strong>
+Experienced in building data-driven applications using 
+<strong>Python, Pandas, NumPy, Scikit-learn, and Computer Vision.</strong>
+Interested in machine learning systems, AI applications, and software engineering.
+Seeking internships to apply ML and engineering skills in real-world products.
 </p>
+
+</div>
+
+
+<div class="section">
 
 <h2>Education</h2>
 
 <p>
-<strong>Bachelor of Technology (B.Tech) – Computer Science</strong><br>
+
+<strong>Bachelor of Technology – Computer Science</strong><br>
 Mandsaur University, Madhya Pradesh<br>
 Batch: 2027 | CGPA: 8.0
+
 </p>
+
+</div>
+
+
+<div class="section">
 
 <h2>Relevant Coursework</h2>
 
 <ul>
+
 <li>Data Structures & Algorithms</li>
 <li>Object-Oriented Programming</li>
 <li>Machine Learning</li>
@@ -168,7 +232,13 @@ Batch: 2027 | CGPA: 8.0
 <li>Database Management Systems</li>
 <li>Operating Systems</li>
 <li>Computer Networks</li>
+
 </ul>
+
+</div>
+
+
+<div class="section">
 
 <h2>Technical Skills</h2>
 
@@ -185,110 +255,133 @@ Batch: 2027 | CGPA: 8.0
 <span>Computer Vision</span>
 <span>OpenCV</span>
 <span>MediaPipe</span>
-<span>Data Analysis</span>
 <span>MySQL</span>
-<span>Git & GitHub</span>
-<span>Data Structures & Algorithms</span>
+<span>Git</span>
+<span>GitHub</span>
+<span>Data Structures</span>
 
 </div>
 
+</div>
+
+
+<div class="section">
+
 <h2>Projects</h2>
+
+<div class="project">
+
+<strong>Real-Time American Sign Language Recognition</strong>
+
+<div class="tech">
+Tech: Python, OpenCV, MediaPipe, Scikit-learn
+</div>
 
 <ul>
 
 <li>
-
-<strong>Restaurant Tips Data Analysis | Python</strong><br>
-
-Analyzed tipping behavior using the Seaborn Tips dataset.
-Performed data cleaning, exploratory analysis, and data visualization using Pandas and Seaborn.
-
-<strong>GitHub:</strong>
-<a href="https://github.com/jayantjain052005/restaurant-tips-analysis" target="_blank">
-restaurant-tips-analysis
-</a>
-
+Built a real-time ASL alphabet recognition system using hand landmark detection.
 </li>
 
-<li style="margin-top:12px;">
-
-<strong>House Price Prediction | Machine Learning</strong><br>
-
-Developed a machine learning model using Scikit-learn Linear Regression.
-
-Model Evaluation:
-
-R² Score: 0.374  
-MAE: 30,829  
-RMSE: 41,138  
-
-<strong>GitHub:</strong>
-<a href="https://github.com/jayantjain052005/house-price-prediction" target="_blank">
-house-price-prediction
-</a>
-
-</li>
-
-<li style="margin-top:12px;">
-
-<strong>Real-Time American Sign Language Recognition | Computer Vision</strong><br>
-
-Developed a real-time ASL recognition system using Python, OpenCV, and MediaPipe.
-
-Implemented hand landmark detection and machine learning classification
-to recognize ASL alphabet gestures from webcam input.
-
-<strong>GitHub:</strong>
-<a href="https://github.com/jayantjain052005/real-time-asl-recognition" target="_blank">
-real-time-asl-recognition
-</a>
-
-</li>
-
-<li style="margin-top:12px;">
-
-<strong>DSA Practice Repository</strong><br>
-
-Solved <strong>350+ Data Structures & Algorithms problems</strong> across coding platforms,
-improving algorithmic thinking and problem-solving ability.
-
-<strong>Profile:</strong>
-<a href="https://codolio.com/profile/jayantjain052005" target="_blank">
-codolio.com/profile/jayantjain052005
-</a>
-
+<li>
+Implemented machine learning classification to recognize gestures from webcam input.
 </li>
 
 </ul>
+
+<a href="https://github.com/jayantjain052005/real-time-asl-recognition" target="_blank">
+GitHub Repository
+</a>
+
+</div>
+
+
+<div class="project">
+
+<strong>House Price Prediction</strong>
+
+<div class="tech">
+Tech: Python, Pandas, Scikit-learn
+</div>
+
+<ul>
+
+<li>Developed a Linear Regression model for predicting housing prices.</li>
+
+<li>
+Model Evaluation:
+R² = 0.374 | MAE = 30,829 | RMSE = 41,138
+</li>
+
+</ul>
+
+<a href="https://github.com/jayantjain052005/house-price-prediction" target="_blank">
+GitHub Repository
+</a>
+
+</div>
+
+
+<div class="project">
+
+<strong>Restaurant Tips Data Analysis</strong>
+
+<div class="tech">
+Tech: Python, Pandas, Seaborn, Matplotlib
+</div>
+
+<ul>
+
+<li>
+Performed exploratory data analysis on tipping behavior dataset.
+</li>
+
+<li>
+Created visual insights and statistical summaries using Python libraries.
+</li>
+
+</ul>
+
+<a href="https://github.com/jayantjain052005/restaurant-tips-analysis" target="_blank">
+GitHub Repository
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="section">
 
 <h2>Achievements</h2>
 
 <ul>
 
 <li>
-🏆 <strong>Best Paper Award – International Conference (ICIECT-2025)</strong><br>
-Received the <strong>Best Paper Award</strong> at the International Conference on 
-<strong>Innovative Engineering & Computational Technologies (ICIECT-2025)</strong> 
-organized by the Faculty of Engineering & Technology, Mandsaur University.
 
-<br>
-Paper Title: <strong>"AR Sleep Engine: A Predictive Local Response Generation Framework"</strong>
+🏆 <strong>Best Paper Award – ICIECT 2025</strong><br>
+
+Paper: 
+<strong>
+AR Sleep Engine: A Predictive Local Response Generation Framework
+</strong>
 
 <br><br>
 
-<a href="https://raw.githubusercontent.com/jayantjain052005/resume/main/assets/best_papper.jpeg" target="_blank">
-View Certificate
+<a href="https://raw.githubusercontent.com/jayantjain052005/resume/main/APISleepEngine_APredictiveModel_3.pdf" target="_blank">
+View Research Paper
 </a>
 
 </li>
 
-<li style="margin-top:16px;">
-🏆 <strong>2nd Place – Tech Titans Hackathon</strong><br>
-Secured <strong>2nd place</strong> in the Tech Titans Hackathon organized by the Computer Science Association at Mandsaur University.
+
+<li>
+
+🏆 <strong>2nd Place – Tech Titans Hackathon</strong>
 
 <br>
 
-<strong>LinkedIn:</strong>
 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7296813335700803584/" target="_blank">
 View Post
 </a>
@@ -297,12 +390,20 @@ View Post
 
 </ul>
 
+</div>
+
+
+<div class="section">
+
 <h2>Certifications</h2>
 
 <ul>
 
 <li>
-<strong>Sigma 5.0 – Data Structures & Algorithms</strong> (Apna College)<br>
+
+<strong>Sigma 5.0 – Data Structures & Algorithms</strong> (Apna College)
+
+<br>
 
 <a href="https://raw.githubusercontent.com/jayantjain052005/resume/main/certificate-sigma-50-672b17223c33c36b830d9022%20(4).pdf" target="_blank">
 View Certificate
@@ -310,16 +411,25 @@ View Certificate
 
 </li>
 
-<li style="margin-top:10px;">
+<li>
+
 <strong>Prime AI Course – Apna College</strong> (Ongoing)
+
 </li>
 
 </ul>
+
+</div>
+
+
 <div class="footer">
-Open to Software Engineering & Data Science Internships • Remote / Relocation Ready
+
+Open to Software Engineering & Machine Learning Internships • Remote / Relocation Ready
+
 </div>
 
 </div>
 
 </body>
+
 </html>
