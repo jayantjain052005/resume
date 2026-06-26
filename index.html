@@ -110,6 +110,35 @@ font-size:13px;
 margin-bottom:15px;
 }
 
+.experience-item{
+margin-bottom:20px;
+}
+
+.experience-header{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+flex-wrap:wrap;
+}
+
+.experience-role{
+font-weight:700;
+font-size:15px;
+color:#111827;
+}
+
+.experience-company{
+color:#2563eb;
+font-size:14px;
+margin-top:2px;
+}
+
+.experience-date{
+font-size:13px;
+color:#6b7280;
+white-space:nowrap;
+}
+
 .tech{
 font-size:13px;
 color:#6b7280;
@@ -142,6 +171,9 @@ align-items:flex-start;
 }
 .profile-pic{
 margin-top:15px;
+}
+.experience-header{
+flex-direction:column;
 }
 }
 
@@ -201,13 +233,36 @@ LeetCode
 <h2>Professional Summary</h2>
 
 <p>
-Computer Science student with strong foundations in 
+Computer Science student with strong foundations in
 <strong>Data Structures & Algorithms, Machine Learning, and Data Analysis.</strong>
-Experienced in building data-driven applications using 
+Experienced in building data-driven applications using
 <strong>Python, Pandas, NumPy, Scikit-learn, OpenCV, and MediaPipe.</strong>
 Interested in machine learning systems, AI applications, and software engineering.
 Seeking internship opportunities to apply ML and engineering skills in real-world products.
 </p>
+
+</div>
+
+
+<div class="section">
+
+<h2>Experience</h2>
+
+<div class="experience-item">
+<div class="experience-header">
+<div>
+<div class="experience-role">Chief Technology Officer (CTO)</div>
+<div class="experience-company">FamFastSeller — India</div>
+</div>
+<div class="experience-date">Present</div>
+</div>
+<ul style="margin-top:8px;">
+<li>Lead engineering of FamFastSeller, a community-driven marketplace simplifying branding for Indian businesses across 70+ product and service categories.</li>
+<li>Architected and scaled the platform's tech stack; oversaw seamless seller-buyer experience with focus on reliability and performance.</li>
+<li>Drove tech strategy across retail, e-commerce, and social platform domains; aligned product development with target audience needs and business growth goals.</li>
+</ul>
+<a class="btn" href="https://famfastseller.com" target="_blank">Company Website</a>
+</div>
 
 </div>
 
@@ -267,7 +322,6 @@ Batch: 2027 | CGPA: 8.0
 </div>
 
 
-<!-- ✅ DSA SECTION -->
 <div class="section">
 
 <h2>Data Structures & Algorithms</h2>
@@ -293,6 +347,27 @@ Codolio Profile
 <div class="section">
 
 <h2>Projects</h2>
+
+<div class="project">
+
+<strong>DocuFlow AI – AI-Powered Document Vault</strong>
+
+<div class="tech">
+Tech: Python, Flask, SQLite, Gemini API, OCR (pytesseract, pdfplumber)
+</div>
+
+<ul>
+<li>Full-stack Flask web app for secure document management with per-user storage, session auth, and PBKDF2-hashed passwords.</li>
+<li>Integrated Gemini API for AI-driven classification and natural language search — retrieve docs via queries like "2023 ITR".</li>
+<li>OCR pipeline using pytesseract and pdfplumber; security-first design with extension allowlisting and path-traversal prevention.</li>
+</ul>
+
+<a class="btn" href="https://github.com/jayantjain052005/Docuflow_ai" target="_blank">
+GitHub Repository
+</a>
+
+</div>
+
 
 <div class="project">
 
@@ -353,7 +428,8 @@ GitHub Repository
 </a>
 
 </div>
-  <div class="project">
+
+<div class="project">
 
 <strong>CreditWise Loan Approval System</strong>
 
@@ -378,7 +454,6 @@ Live Demo
 </div>
 
 </div>
-  
 
 
 <div class="section">
